@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.nupp {
+  color: lightgray;
+  background-color: green;
+}
+
+.nupp:hover{
+  height: 200px;
+}
+
+.nupp:active{
+  cursor: grab;
+}
+
+.tekst {
+  font-style: italic;
+}
+
+.tekst:hover {
+  font-size: 24px;
+}
+
+.pilt {
+  height: 30%;
+  width: 30%;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body { 
+  background-color: beige;
+}
