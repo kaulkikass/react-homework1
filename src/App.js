@@ -1,12 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Avaleht from './Pages/Avaleht';
+import Kontakt from './Pages/Kontakt';
+import Meist from './Pages/Meist';
+import Menuu from './Pages/Menuu';
 
 function App() {
   return (
-    <div className="App">
-      <button className="nupp">Siin on nupp</button>
-      <p className="tekst">aopkasfkpgigaoiegjpapgfjapigjpi</p>
-      <div className="flex"><img className="pilt" src="https://thumbs.dreamstime.com/b/random-click-squirrel-wire-random-picture-cute-squirrel-219506797.jpg" alt="" /></div>
-    </div>
+      <div>
+        <Menuu />
+        <Routes>
+          <Route exact path='/' element={ <Avaleht /> } />
+          <Route exact path='kontakt' element={ <Kontakt /> } />
+          <Route exact path='meist' element={ <Meist /> } />
+        </Routes>
+      </div>
   );
 }
 
